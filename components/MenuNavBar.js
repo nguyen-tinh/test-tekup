@@ -2,7 +2,7 @@ import Image from "next/image";
 import Modal from "./UI/Modal";
 import { XCircleIcon } from "@heroicons/react/outline";
 
-function MenuNavBar({onClose}) {
+function MenuNavBar({ onClose }) {
   return (
     <Modal onClose={onClose}>
       {/* header */}
@@ -20,12 +20,14 @@ function MenuNavBar({onClose}) {
       </div>
 
       {/* navbar */}
-      <div className="flex flex-col p-4 space-y-8">
-        <div className='flex flex-col space-y-4'>
+      <div className="flex flex-col p-4 space-y-6">
+        <div className="flex flex-col space-y-3">
+          <a className="menu-link">Language English</a>
           <a className="menu-link">Login</a>
           <a className="menu-link">Cart</a>
+          <a className="menu-link">Search</a>
         </div>
-        <div className='flex flex-col space-y-4'>
+        <div className="flex flex-col space-y-4">
           <a className="menu-link">Design your own</a>
           <a className="menu-link">Collection</a>
           <a className="menu-link link-active">Bags</a>

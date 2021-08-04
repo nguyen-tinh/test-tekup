@@ -36,7 +36,7 @@ function NavBar({onShowMenu}) {
         />
 
         {/* right */}
-        <div className="hidden lg:flex flex-1 space-x-5 items-center text-center justify-end">
+        <div className="hidden lg:flex flex-1 space-x-2 xl:space-x-5 items-center text-center justify-end">
           <a className="cursor-pointer">Design your own</a>
           <a className="cursor-pointer">Collection</a>
           <a className="cursor-pointer link-active">Bags</a>
