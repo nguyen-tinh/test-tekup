@@ -18,10 +18,19 @@ module.exports = {
         grayColor: "#ACACAC",
         grayLightColor: "#E7E7E7",
       },
+      animation: {
+        slideLeft: 'slideLeft 0.4s ease-out forwards'
+      },
+      keyframes: {
+        slideLeft: {
+          '0%': {transform: 'translateX(80rem)', opacity: '0'},
+          '100%': {transform: 'translateX(0)', opacity: '1'}
+        }
+      }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

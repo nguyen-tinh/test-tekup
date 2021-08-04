@@ -101,12 +101,12 @@ export default function Home() {
   ]
 
   return (
-    <div className="">
+    <div className="container mx-auto">
       <Breadcrum />
-      <div className="grid grid-cols-2 gap-16">
-        {/* right */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
+        {/* left */}
         <div className="text-primary">
-          <h1 className="font-bold text-2xl">ConVertible Mini Merinal</h1>
+          <h1 className="font-bold text-2xl text-center sm:text-left">ConVertible Mini Merinal</h1>
           <div className="flex items-center justify-center relative bg-[#FAFAFA] mt-8 rounded-md">
             <Image
               className="product-detail__img"
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 space-x-4 items-center flex cursor-pointer">
+          <div className="mt-8 space-x-4 items-center flex cursor-pointer justify-center sm:justify-start">
             <h4 className="text-lg text-primary font-semibold">
               PRODUCT DETAILS
             </h4>
@@ -129,21 +129,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* left */}
-        <div className='max-w-md'>
-          <div className="flex max-w-sm px-3 py-1 justify-between items-center border-2 border-primary border-solid">
+        {/* right */}
+        <div className='max-w-md sm:max-w-xs lg:max-w-md items-center'>
+          <div className="ml-3 md:ml-0 flex max-w-sm px-3 py-1 justify-between items-center border-2 border-primary border-solid">
             <p className="pl-1">FLAP</p>
             <ChevronDownIcon className="h-6 cursor-pointer" />
           </div>
 
           <div className="mt-8">
-            <h1 className="font-bold text-xl text-primary">
+            <h1 className="text-center sm:text-left font-bold text-xl text-primary">
               Select Leather Type
             </h1>
-            <p className="font-light text-sm text-primary pt-1 mb-4">
+            <p className="text-center sm:text-left font-light text-sm text-primary pt-1 mb-4">
               TUMBLED LEATHER $100
             </p>
-            <div className="grid grid-cols-4 gap-1">
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-1">
               {leatherTypeList.map(({ id, content, image }) => (
                 <LeatherType key={id} content={content} image={image} />
               ))}
@@ -151,29 +151,29 @@ export default function Home() {
           </div>
 
           <div className="mt-8">
-            <h1 className="font-bold text-xl text-primary">
+            <h1 className="text-center sm:text-left font-bold text-xl text-primary">
               Select Leather Color
             </h1>
 
             {/* color */}
-            <div className="my-4 flex">
+            <div className="my-4 flex overflow-x-scroll scrollbar-hide">
                 <LeatherColor />
             </div>
 
             {/* darkcolor */}
-            <div className='my-4 flex'>
+            <div className='my-4 flex overflow-x-scroll scrollbar-hide'>
               <LeatherDarkColor />
             </div>
           </div>
 
-          <div>
-            <h1 className="font-bold text-xl text-primary">
+          <div className='mt-8'>
+            <h1 className="text-center sm:text-left font-bold text-xl text-primary">
               Select Leather Type
             </h1>
-            <p className="font-light text-sm text-primary pt-1 mb-4">
+            <p className="text-center sm:text-left font-light text-sm text-primary pt-1 mb-4">
               HUMBLE $300
             </p>
-            <div className="grid grid-cols-4 gap-1">
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-1">
               {patternTypeList.map(({ id, content, image }) => (
                 <LeatherType key={id} content={content} image={image} />
               ))}

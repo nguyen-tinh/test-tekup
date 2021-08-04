@@ -1,6 +1,6 @@
 function Breadcrum() {
   return (
-    <ul className="flex p-2 text-xs text-primary mb-8">
+    <ul className="flex p-2 items-center justify-center sm:justify-start text-xs text-primary mb-8">
       <li className="breadcrumbs-item">
         <a href="">HOME</a>
       </li>

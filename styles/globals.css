@@ -1,19 +1,19 @@
 /* breadcrum */
 .breadcrumbs-item:not(:last-of-type)::after {
-    content:'-';
-    margin: 0 5px;
-    font-size: 14px;
-    color: #1F1F1F;
+  content: "-";
+  margin: 0 5px;
+  font-size: 14px;
+  color: #1f1f1f;
 }
 
 .product-detail__img {
-    position: absolute;
-    top: -80px !important;
+  position: absolute;
+  top: -80px !important;
 }
 
 .text-12 {
-    font-size: 12px;
-    line-height: 24px;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 @tailwind base;
@@ -21,7 +21,11 @@
 @tailwind utilities;
 
 @layer components {
-    .link-active {
-        @apply p-1 border-b-2 border-solid border-primary;
-    }
+  .link-active {
+    @apply p-1 border-b-2 border-solid border-primary;
+  }
+
+  .menu-link {
+    @apply p-2 mr-2 text-primary text-lg block cursor-pointer rounded-md shadow-sm transition-colors duration-300 hover:bg-[#C6B67E];
+  }
 }
