@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Modal from "./UI/Modal";
-import { XCircleIcon } from "@heroicons/react/outline";
+import {  } from "@heroicons/react/outline";
+import {
+  GlobeAltIcon,
+  UserCircleIcon,
+  ShoppingCartIcon,
+  SearchIcon,
+  XCircleIcon
+} from "@heroicons/react/outline";
 
 function MenuNavBar({ onClose }) {
   return (
@@ -22,10 +29,10 @@ function MenuNavBar({ onClose }) {
       {/* navbar */}
       <div className="flex flex-col p-4 space-y-6">
         <div className="flex flex-col space-y-3">
-          <a className="menu-link">Language English</a>
-          <a className="menu-link">Login</a>
-          <a className="menu-link">Cart</a>
-          <a className="menu-link">Search</a>
+          <a className="menu-link flex items-center space-x-4"><GlobeAltIcon className='h-6' /><span>Language English</span></a>
+          <a className="menu-link flex items-center space-x-4"><UserCircleIcon className='h-6'/><span>Login</span></a>
+          <a className="menu-link flex items-center space-x-4"><ShoppingCartIcon className='h-6' /><span>Your Cart</span></a>
+          <a className="menu-link flex items-center space-x-4"><SearchIcon className='h-6'/><span>Search</span></a>
         </div>
         <div className="flex flex-col space-y-4">
           <a className="menu-link">Design your own</a>
